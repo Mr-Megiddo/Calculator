@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link href="calculator.css" rel="stylesheet">
+  <script src="calculator.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>Calculator</header>
+  <section class="calculator">
+    <div class="inputDiv">
+      <input type="text" id="input">
+    </div>
+    <div class="buttondiv">
+      <div class="flex1">
+        <button style="background-color: red; color:white;font-weight: 700;"
+          onclick="clearInput()"
+        >AC</button>
+        <button style="background-color: Orange; color:white;font-weight: 700;" 
+          onclick="clearLastChar()">
+          <i class="fa-solid fa-delete-left"></i>
+        </button>
+        <button style="background-color: Orange; color:white;font-weight: 700;"
+          onclick="EnterValue('%')"
+        >%</button>
+        <button style="background-color: Orange; color:white;font-weight: 700;"
+          onclick="EnterValue('/')"
+        >/</button>
+      </div>
+      <div class="flex2">
+        <button
+          onclick="EnterValue(7)"
+        >7</button>
+        <button
+          onclick="EnterValue(8)"
+        >8</button>
+        <button
+          onclick="EnterValue(9)"
+        >9</button>
+        <button style="background-color: Orange; color:white;font-weight: 700;"
+          onclick="EnterValue('*')"
+        >x</button>
+      </div>
+      <div class="flex3">
+        <button
+          onclick="EnterValue(4)"
+        >4</button>
+        <button
+          onclick="EnterValue(5)"
+        >5</button>
+        <button
+          onclick="EnterValue(6)"
+        >6</button>
+        <button style="background-color: Orange; color:white;font-weight: 700;"
+          onclick="EnterValue('-')"
+        >-</button>
+      </div>
+      <div class="flex4">
+        <button
+          onclick="EnterValue(1)"
+        >1</button>
+        <button
+          onclick="EnterValue(2)"
+        >2</button>
+        <button
+          onclick="EnterValue(3)"
+        >3</button>
+        <button style="background-color: Orange; color:white;font-weight: 700;"
+          onclick="EnterValue('+')"
+        >+</button>
+      </div>
+      <div class="flex5">
+        <button class="zeroButton"
+          onclick="EnterValue(0)"
+        >0</button>
+        <button style="font-weight: 800;"
+          onclick="EnterValue('.')"
+        >.</button>
+        <button style="background-color: Orange; color:white; font-weight: 700;"
+          onclick="calculate()" onclick="EnterValue('=')"
+        >=</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

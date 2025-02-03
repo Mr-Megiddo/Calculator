@@ -1,0 +1,127 @@
+body{
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Mono", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header{
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.calculator{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  gap:10px;
+}
+
+.inputDiv{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px;
+}
+.inputDiv input{
+  border:none;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 20px;
+  color:rgb(100, 89, 89);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.flex1{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px;
+  gap: 10px;
+  font-weight: 600;
+}
+.flex2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px;
+}
+.flex3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px;
+}
+.flex4{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px;
+}
+.flex5{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 100px;
+}
+
+.flex1 button{
+  border:none;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: Orange;
+  font-size: 20px;
+  cursor:pointer;
+}
+.flex2 button{
+  border:none;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: black;
+  color:white;
+  font-size: 20px;
+  cursor:pointer;
+}
+.flex3 button{
+  border:none;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: black;
+  color:white;
+  font-size: 20px;
+  cursor:pointer;
+}
+.flex4 button{
+  border:none;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: black;
+  color:white;
+  font-size: 20px;
+  cursor:pointer;
+}
+.flex5 button{
+  border:none;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: black;
+  color:white;
+  font-size: 20px;
+  cursor:pointer;
+}
+.flex5 .zeroButton{
+  width: 95%;
+  border-radius: 20px;
+}
+
+
+
+
+
+
+
