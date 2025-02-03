@@ -31,15 +31,20 @@ function clearLastChar(){
   }
 }
 
-// document.addEventListener("keyup", function(event) {
-//   if (event.key === "Enter") {
-//     calculate();
-//   }
-// });
-
-// const button = document.getElementById("button");
-// button.addEventListener('keyup', function(event) {
-//   if (event.key === "Enter") {
-//     event.preventDefault();
-//   }
-// });
+document.addEventListener("keydown", function(event) {
+  let inputField = document.getElementById("input");
+  if (event.key === "Enter") {
+    event.preventDefault();
+    calculate();
+  }
+  else if(
+    (event.key >= "0" && event.key <= "9") ||["+", "-", "*", "/", "%", "."].includes(event.key) 
+  ){
+    event.preventDefault();
+    inputField.value += event.key;
+  }
+  else if(event.key === "Backspace"){
+    event.preventDefault();
+    clearLastChar();
+  }
+});
