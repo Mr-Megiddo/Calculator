@@ -120,6 +120,40 @@ header{
 }
 
 
+@media screen and (max-width:375px){
+  .flex1{
+    grid-template-rows: 80px;
+    gap: 5px;
+  }
+  .flex2{
+    grid-template-rows: 80px;
+  }
+  .flex3{
+    grid-template-rows: 80px;
+  }
+  .flex4{
+    grid-template-rows: 80px;
+  }
+  .flex5{
+    grid-template-rows: 80px;
+  }
+  
+  .flex1 button,
+  .flex2 button,
+  .flex3 button,
+  .flex4 button,
+  .flex5 button{
+    height: 65px;
+    width: 65px;
+  }
+
+  .flex5 .zeroButton{
+    width: 95%;
+    border-radius: 20px;
+  }
+}
+
+
 
 
 

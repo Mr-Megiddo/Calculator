@@ -23,6 +23,23 @@ function clearInput(){
 function clearLastChar(){
   let expression = document.getElementById("input").value;
   updated = expression.slice(0,((expression.length)-1));
-  document.getElementById("input").value = updated;
+  if(updated === ""){
+    updated = "0"
+    document.getElementById("input").value = updated;
+  }else{
+    document.getElementById("input").value = updated;
+  }
 }
 
+// document.addEventListener("keyup", function(event) {
+//   if (event.key === "Enter") {
+//     calculate();
+//   }
+// });
+
+// const button = document.getElementById("button");
+// button.addEventListener('keyup', function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//   }
+// });
